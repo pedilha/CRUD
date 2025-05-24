@@ -136,24 +136,64 @@ public class MainController {
 
     @FXML
     private void onSalvarAluno() {
-        Aluno a = new Aluno(
-                tfAlunoNome.getText(),
-                cbAlunoMaioridade.isSelected(),
-                cmbAlunoCurso.getValue(),
-                tfAlunoMatricula.getText().isEmpty()
-                        ? 0
-                        : Long.parseLong(tfAlunoMatricula.getText())
-        );
-        a.setSexo(cbAlunoSexo.getValue());
+        try {
+            // 1) Validações básicas
+            if (tfAlunoNome.getText().isBlank()) {
+                new Alert(Alert.AlertType.WARNING, "Digite o nome do aluno.").showAndWait();
+                return;
+            }
+            if (cbAlunoSexo.getValue() == null) {
+                new Alert(Alert.AlertType.WARNING, "Selecione o sexo do aluno.").showAndWait();
+                return;
+            }
+            if (cmbAlunoCurso.getValue() == null) {
+                new Alert(Alert.AlertType.WARNING, "Selecione um curso para o aluno.").showAndWait();
+                return;
+            }
 
-        if (a.getMatricula()==0) {
-            alunoDAO.create(a);
-            alunosObs.add(a);
-        } else {
-            alunoDAO.update(a);
-            tvAlunos.refresh();
+            // 2) Monta objeto Aluno
+            long matricula = tfAlunoMatricula.getText().isEmpty()
+                    ? 0L
+                    : Long.parseLong(tfAlunoMatricula.getText());
+
+            Aluno a = new Aluno(
+                    tfAlunoNome.getText(),
+                    cbAlunoMaioridade.isSelected(),
+                    cmbAlunoCurso.getValue(),
+                    matricula
+            );
+            a.setSexo(cbAlunoSexo.getValue());
+
+            // 3) Persiste e atualiza a lista observável
+            if (a.getMatricula() == 0L) {
+                alunoDAO.create(a);
+                alunosObs.add(a);
+                new Alert(Alert.AlertType.INFORMATION,
+                        "Aluno criado com matrícula: " + a.getMatricula())
+                        .showAndWait();
+            } else {
+                alunoDAO.update(a);
+                tvAlunos.refresh();
+                new Alert(Alert.AlertType.INFORMATION,
+                        "Dados do aluno atualizados com sucesso!")
+                        .showAndWait();
+            }
+
+            // 4) Limpa o formulário
+            onNovoAluno();
+
+        } catch (NumberFormatException nfe) {
+            new Alert(Alert.AlertType.ERROR,
+                    "Matrícula inválida: " + nfe.getMessage())
+                    .showAndWait();
+        } catch (Exception ex) {
+            ex.printStackTrace();  // veja o erro completo no console
+            new Alert(Alert.AlertType.ERROR,
+                    "Erro ao salvar aluno:\n" + ex.getMessage())
+                    .showAndWait();
         }
     }
+
 
     @FXML
     private void onExcluirAluno() {

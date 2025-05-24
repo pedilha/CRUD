@@ -29,4 +29,11 @@ public class Curso {
 
     public Area   getArea() { return area; }
     public void   setArea(Area area) { this.area = area; }
+
+    @Override
+    public String toString() {
+        return this.getNome();   // ou getSigla(), se preferir exibir a sigla
+    }
 }
+
+
