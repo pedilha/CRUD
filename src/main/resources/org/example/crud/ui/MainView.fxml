@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.crud.ui.MainController">
+
+    <center>
+        <TabPane fx:id="tabPane">
+            <!-- Aba de Cursos -->
+            <Tab text="Cursos">
+                <BorderPane>
+                    <top>
+                        <HBox spacing="10" style="-fx-padding: 10;">
+                            <Label text="Nome:"/>
+                            <TextField fx:id="tfCursoNome" prefWidth="150"/>
+                            <Label text="Sigla:"/>
+                            <TextField fx:id="tfCursoSigla" prefWidth="80"/>
+                            <Label text="Área:"/>
+                            <ChoiceBox fx:id="cbCursoArea"/>
+                            <Button text="Novo"    onAction="#onNovoCurso"/>
+                            <Button text="Salvar"  onAction="#onSalvarCurso"/>
+                            <Button text="Excluir" onAction="#onExcluirCurso"/>
+                        </HBox>
+                    </top>
+                    <center>
+                        <TableView fx:id="tvCursos">
+                            <columns>
+                                <TableColumn text="ID"     fx:id="colCursoId"     prefWidth="50"/>
+                                <TableColumn text="Nome"   fx:id="colCursoNome"   prefWidth="150"/>
+                                <TableColumn text="Sigla"  fx:id="colCursoSigla"  prefWidth="80"/>
+                                <TableColumn text="Área"   fx:id="colCursoAreaCol" prefWidth="100"/>
+                            </columns>
+                        </TableView>
+                    </center>
+                </BorderPane>
+            </Tab>
+
+            <!-- Aba de Alunos -->
+            <Tab text="Alunos">
+                <BorderPane>
+                    <top>
+                        <HBox spacing="10" style="-fx-padding: 10;">
+                            <Label text="Matrícula:"/>
+                            <TextField fx:id="tfAlunoMatricula" prefWidth="80"/>
+                            <Label text="Nome:"/>
+                            <TextField fx:id="tfAlunoNome" prefWidth="150"/>
+                            <Label text="Maioridade:"/>
+                            <CheckBox fx:id="cbAlunoMaioridade"/>
+                            <Label text="Sexo:"/>
+                            <ChoiceBox fx:id="cbAlunoSexo"/>
+                            <Label text="Curso:"/>
+                            <ComboBox fx:id="cmbAlunoCurso" prefWidth="120"/>
+                            <Button text="Novo"    onAction="#onNovoAluno"/>
+                            <Button text="Salvar"  onAction="#onSalvarAluno"/>
+                            <Button text="Excluir" onAction="#onExcluirAluno"/>
+                        </HBox>
+                    </top>
+                    <center>
+                        <TableView fx:id="tvAlunos">
+                            <columns>
+                                <TableColumn text="Matrícula" fx:id="colAlunoMatricula" prefWidth="80"/>
+                                <TableColumn text="Nome"      fx:id="colAlunoNome"      prefWidth="150"/>
+                                <TableColumn text="Maior?"    fx:id="colAlunoMaior"     prefWidth="60"/>
+                                <TableColumn text="Sexo"      fx:id="colAlunoSexoCol"   prefWidth="60"/>
+                                <TableColumn text="Curso"     fx:id="colAlunoCursoCol"  prefWidth="120"/>
+                            </columns>
+                        </TableView>
+                    </center>
+                </BorderPane>
+            </Tab>
+        </TabPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="85f68091-ebe0-4fc4-837c-8dc466f0f9b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/MainApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/config/ConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/dao/AlunoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/dao/CursoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/dao/IAlunoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/dao/ICursoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/model/Aluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/model/AlunoCreate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/model/AlunoDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/model/AlunoListagens.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/model/AlunoUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/model/Area.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/model/Curso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/model/Cursos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/crud/ui/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/crud/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/crud/ui/MainView.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2xCG0UICi67BRTRYV6hSPMreSNL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AlunoCreate.executor": "Run",
+    "Application.AlunoDelete.executor": "Run",
+    "Application.AlunoListagens.executor": "Run",
+    "Application.AlunoUpdate.executor": "Run",
+    "Application.MainApp.executor": "Run",
+    "Application.Principal.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pedro\IdeaProjects\CRUD\src\main\resources\org\example\crud\ui" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85f68091-ebe0-4fc4-837c-8dc466f0f9b5" name="Changes" comment="" />
+      <created>1747434422203</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747434422203</updated>
+    </task>
+    <servers />
+  </component>
+</project>
